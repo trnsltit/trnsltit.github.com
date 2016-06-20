@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 		<meta name="description" content="The 'Translate It' app facilitates the communication of simple questions and phrases in multiple languages, with an emphasis on customizability and user-defined content. In this, it supports those providing humanitarian aid, medical services and governmental assistance, as well as newcomers themselves.">
 		<meta name="author" content="Natalie Diffloth, Jonas Weber, Paul Baumgart-Ouahid, Diego Cerdán Puyol, Katharina Willmes">
 
@@ -64,7 +64,8 @@
 		<header>
 			<div class="header-content">
 				<div class="header-content-inner">
-					<img src="img/hero_pic.png">
+					<img src="img/hero_pic.png" class="visible-md-block visible-lg-block" style="max-width: 100%">
+					<img src="img/hero_portrait.png" class="visible-sm-block visible-xs-block" style="max-width: 100%">
 				</div>
 			</div>
 		</header>
@@ -76,27 +77,95 @@
 						<h2 class="section-heading">We've got what you need!</h2>
 						<hr class="light">
 						<p class="text-faded">
-						The "Translate It” app facilitates the communication of simple
-						questions and phrases in multiple languages, with an emphasis on
-						customizability and user-defined content. In this, it supports
-						those providing humanitarian aid, medical services and governmental
+						“Translate It” facilitates the communication of simple questions and phrases in
+						multiple languages, with an emphasis on user-defined content. In this, it
+						supports those providing humanitarian aid, medical services and governmental
 						assistance, as well as newcomers themselves.
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section id="features">
+		<section id="about">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<h2 class="section-heading">Features</h2>
-						<hr class="primary">
-					</div>
+				<div class="text-center">
+					<h2 class="section-heading">About</h2>
+					<hr class="primary">
 				</div>
+				<p>Whether providing humanitarian aid, medical services or governmental
+				assistance, many face the challenge of communicating simple messages or asking
+				simple questions of newcomers to Germany in languages they understand. Adding
+				to the difficulty is that a significant proportion of refugees arriving in
+				Europe have difficulty reading and writing, even in their own languages<sup>1</sup>. For
+				this reason, it is not always possible to depend upon written translations in
+				order to facilitate communication. But relying on the presence of translators
+				for 8-10+ languages at a time is rarely feasible either.</p>
+
+				<p>Among existing translation apps, there are three principal models.
+				The first, like Google Translate, provides automated machine
+				translation. While these apps can be helpful, translation accuracy for
+				target languages such as Farsi, Kurdish and Arabic is notoriously poor.
+				</p>
+
+				<p>The second model, which has been adopted by a variety of translation
+				apps, centers on working with fixed sets of pre-written and/or
+				pre-recorded questions. Here, a user chooses the question s/he would
+				like to pose in the source language and then selects from a
+				pre-determined list of target languages. Having done this, s/he can
+				view a written translation of the question and/or play a recording of
+				that translation. With this approach, the content translation is not
+				produced on-the-fly, but rather pre-recorded by a human translator and
+				saved as an unchangeable core component of the app itself. </p>
+
+				<p>This second approach ensures higher translation quality, but
+				unfortunately, it also prevents users from adding any new content or
+				adapting or reorganizing existing content. It is impossible for a user
+				to amend or customize question lists, or to add languages or dialects
+				that have not already been built into the app’s structure by the
+				developers from the start. As a consequence, the app’s usefulness in
+				new or unforeseen contexts is severely limited. Content cannot be
+				adapted to local needs or specific user requirements. This lack of
+				flexibility affects both usability and the practical application of the
+				app. </p>
+
+				<p>A third model, which combines provided content with the possibility
+				of creating user-defined content, is the direction we have pursued with
+				Translate It. There are a very limited number apps working with this
+				approach. None of those we have been able to find are web-based or
+				compatible with multiple mobile platforms. Further, existing solutions
+				do not fully support the customization of content structures or the
+				addition of new translations to existing content.</p>
+						</p>
+
+						<p class="text-muted" style="margin-top: 2em; margin-bottom: 5em">
+						1: Mason, Ben and Dennis Buchmann. 2016. ICT4Refugees. Bonn: GIZ. Available at
+						<a href="http://www.betterplace-lab.org/wp-content/uploads/ICT4Refugees-Report.pdf">http://www.betterplace-lab.org/wp-content/uploads/ICT4Refugees-Report.pdf</a>
+						</p>
+
+
+						<div class="text-center">
+							<h2 class="section-heading" id="challenges">Imagine the following challenges…</h3>
+							<hr class="primary">
+						</div>
+
+						<ul>
+							<li>A recently arrived refugee needs to make an appointment. The receptionist says in German, “Bitte nehmen Sie Platz. Frau Schmidt kommt bald an.” How will the refugee understand?</li>
+							<li>At a local “Erstaufnahmestelle” (refugee camp), there was a disease outbreak. Doctors needed to ask the same questions to a lot of people. Many of these people could read and so didn’t understand written information that was provided.</li>
+						</ul>
+
+						<p>What would help both sides? Our app hopes to make a difference.</p>
+
 			</div>
+		</section>
+
+		<section>
 			<div class="container">
-				<div class="row">
+				<div class="text-center">
+					<h2 class="section-heading" id="features">What makes our app different?</h2>
+					<hr class="primary">
+				</div>
+
+				<div class="row" style="margin-bottom: 5em">
 					<div class="col-lg-3 col-md-6 text-center">
 						<div class="service-box">
 							<span class="fa fa-stack fa-2x text-primary sr-icons">
@@ -110,8 +179,8 @@
 					<div class="col-lg-3 col-md-6 text-center">
 						<div class="service-box">
 							<i class="fa fa-4x fa-microphone text-primary sr-icons"></i>
-							<h3>Add new recordings</h3>
-							<p class="text-muted">You have the ability to add a new recording anytime, anywhere.</p>
+							<h3>Customizable with new Recordings</h3>
+							<p class="text-muted">You have the ability to add a new recording anytime, anywhere, and to organize the recordings as you (not the developers) need them to be.</p>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6 text-center">
@@ -129,11 +198,23 @@
 						</div>
 					</div>
 				</div>
+
+				<p>Because the app makes audio communication central, it simplifies ease-of-use and emphasizes human connections. We can actually look at each other when we talk, rather than having our technological devices stand in the middle.</p>
+
+				<p>Lastly, the app provides an immediate benefit, even if only a small number of people use the app. A large user base is not required.<br>
+				This combination of features distinguishes our app from other translation apps. From its foundation, the Translate It app is structured to be adaptable to many different situations.</p>
+
 			</div>
+
+
 		</section>
 
+
 		<aside class="bg-dark">
-			<div class="container text-center">
+			<div class="container text-center" style="overflow: hidden">
+				<h2 class="section-heading">Screenshot</h2>
+				<hr class="primary">
+
 				<div class="marvel-device ipad silver landscape">
 					<div class="camera"></div>
 					<div class="screen">
@@ -142,6 +223,74 @@
 					<div class="home"></div>
 				</div>
 			</div>
+		</aside>
+
+		<section id="future">
+			<div class="container">
+				<div class="text-center">
+					<h2 class="section-heading">Future Development</h2>
+					<hr class="primary">
+				</div>
+
+				<div class="media">
+					<div class="media-left">
+						<i class="fa fa-user fa-3x fa-fw"></i>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">Ability to create user accounts</h4>
+						You will be able to synchronize your recordings accross multiple devices.
+					</div>
+				</div>
+				<div class="media">
+					<div class="media-left">
+						<i class="fa fa-users fa-3x fa-fw"></i>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">Ability to share user-produced contents in a team</h4>
+						Teams can work together to share and synhronize their recordings.
+					</div>
+				</div>
+				<div class="media">
+					<div class="media-left">
+						<i class="fa fa-github fa-3x fa-fw"></i>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">Publishing the prototype</h4>
+						We plan to put code for the prototype we have developed on Github in the near future. If anyone would like to see it, please feel free to email us.
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<aside class="bg-dark">
+		<div class="container">
+			<div class="text-center">
+				<h2 class="section-heading">Team</h2>
+				<hr class="primary">
+			</div>
+
+			<div class="row">
+				<div class="col-md-12 col-xs-12">
+					<strong>Natalie Diffloth</strong>
+					<small class="text-muted">Concept and product strategy, user experience design, user interface</small>
+				</div>
+				<div class="col-md-6 col-xs-12">
+					<strong>Paul Baumgart-Ouahid</strong>
+					<small class="text-muted">Core programming, tech strategy and data structure</small>
+				</div>
+				<div class="col-md-6 col-xs-12">
+					<strong>Diego Cerdán Puyol</strong>
+					<small class="text-muted">Supplemental programming of components</small>
+				</div>
+				<div class="col-md-6 col-xs-12">
+					<strong>Jonas Weber</strong>
+					<small class="text-muted">Core programming, tech strategy and data structure</small>
+				</div>
+				<div class="col-md-6 col-xs-12">
+					<strong>Katharina Willmes</strong>
+					<small class="text-muted">Organizational and translation support</small>
+				</div>
+		</div>
 		</aside>
 
 		<section id="contact">
